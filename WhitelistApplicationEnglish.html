@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Whitelist Application - Legion Rp</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Legion Rp" name="description" >
+    <meta content="Legion Rp Sri Lanka" name="keywords" >
+    <meta content="BenX Development" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+
+    <style>
+        .success {
+            color: #4BB543;
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #4BB543;
+            border-radius: 4px;
+            display: none;
+        }
+        .error {
+            color: #ff3333;
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #ff3333;
+            border-radius: 4px;
+            display: none;
+        }
+        .form-section {
+            background: rgba(30, 30, 40, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #f07320;
+        }
+        .form-section h4 {
+            color: #f08420;
+            margin-bottom: 15px;
+        }
+        .character-info {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .character-info .field-set {
+            flex: 1;
+            min-width: 200px;
+        }
+        .required-field::after {
+            content: " *";
+            color: #ff3333;
+        }
+    </style>
+</head>
+
+<body class="dark-scheme">
+    <div id="wrapper">
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll To TOP</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="./index.html">
+                                            <img class="logo-main" src="images/logo.png" alt="" >
+                                            <img class="logo-mobile" src="images/logo.png" alt="" >
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                              <li><a class="menu-item" href="./index.html">Home</a></li>
+                                    <li><a class="menu-item" href="./ServerRules.html">Server Rules</a></li>
+<li><a class="menu-item" href="./police.html">Pd Application</a></li>
+<li><a class="menu-item" href="./medical.html">Md Application</a></li>
+                                   
+                                    <li><a class="menu-item" href="./ourteam.html">OurTeam</a></li>
+                                    <li><a class="menu-item" href="./WhitelistApplicationEnglish.html">Whitelist Application</a>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="" class="btn-line">Discord</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <section>
+                <div class="container position-relative z1000">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <h2>Whitelist Application</h2>
+                            <p class="lead">
+                                All Fields Marked With <span style="color: #ff3333;">*</span> Are Required.
+                            </p>
+<form id="whitelist_form" method="post">
+    <div class="form-section">
+        <h4>Personal Information</h4>
+        <div class="field-set">
+            <span class="d-label required-field">Email</span>
+            <input type="email" name="email" class="form-control" required>
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Full Name (Real)</span>
+            <input type="text" name="full_name" class="form-control" required>
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Date of Birth</span>
+            <input type="date" name="dob" class="form-control" required>
+        </div>
+        <div class="field-set">
+            <span class="d-label">Country and Time Zone</span>
+            <input type="text" name="country_timezone" class="form-control">
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Steam Profile Link</span>
+            <input type="url" name="steam_profile_link" class="form-control" required>
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Steam Profile Name</span>
+            <input type="text" name="steam_profile_name" class="form-control" required>
+        </div>
+        <div class="field-set">
+            <span class="d-label">Steam Hex ID</span>
+            <input type="text" name="steam_hex" class="form-control">
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Any Social Media Link</span>
+            <input type="url" name="social_link" class="form-control" required>
+        </div>
+        <div class="field-set">
+            <span class="d-label">Facebook Name</span>
+            <input type="text" name="facebook_name" class="form-control">
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Discord Username</span>
+            <input type="text" name="discord_username" class="form-control" required>
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Discord ID</span>
+            <input type="text" name="discord_id" class="form-control" required>
+        </div>
+        <div class="field-set">
+            <span class="d-label">Explain Roleplay in your own words</span>
+            <textarea name="roleplay_explain" class="form-control" rows="3"></textarea>
+        </div>
+        <div class="field-set">
+            <span class="d-label">New Life Rules Explanation</span>
+            <textarea name="newlife_explain" class="form-control" rows="3"></textarea>
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Previous Roleplay Experience</span>
+            <select name="previous_rp" class="form-control" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Read Region City Rulebook?</span>
+            <select name="read_rules" class="form-control" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="field-set">
+            <span class="d-label required-field">Agree to Follow Server Rules?</span>
+            <select name="agree_rules" class="form-control" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+    </div>
+
+
+
+                                </div>
+                                    
+                                <div id='submit' class="mt20">
+                                    <button type="submit" id='send_application' class="btn-main">Submit Application</button>
+                                </div>
+
+                                <div id="success_message" class='success'>
+                                    Your Whitelist Application Has Been Submitted Successfully! Our Staff Team Will Review It Shortly. Please Join Our Discord Server For Updates.
+                                </div>
+                                <div id="error_message" class='error'>
+                                    There Was An Error Submitting Your Application. Please Try Again Or Contact Us On Discord.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- content close -->
+        <!-- footer begin -->
+        <footer>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <a href="">
+                                        Legion Rp © 2025
+                                    </a>
+                                </div>
+                                <div class="social-icons">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                                    <a href="https://www.tiktok.com/@Legion_rp"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="https://www.youtube.com/@LegionRoleplay"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('whitelist_form');
+    const successMsg = document.getElementById('success_message');
+    const errorMsg = document.getElementById('error_message');
+    const submitBtn = document.getElementById('send_application');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+
+        const formData = new FormData(form);
+
+        // Discord webhook message
+        const message = {
+            content: "**New Whitelist Application Submitted** ✅",
+            embeds: [{
+                title: "Whitelist Application",
+                color: 5814783, // Orange-ish
+                fields: [
+                    { name: "📧 Email", value: formData.get("email") || "N/A", inline: true },
+                    { name: "👤 Full Name", value: formData.get("full_name") || "N/A", inline: true },
+                    { name: "🎂 Date of Birth", value: formData.get("dob") || "N/A", inline: true },
+                    { name: "🌎 Country & Timezone", value: formData.get("country_timezone") || "N/A", inline: true },
+                    { name: "🔗 Steam Profile Link", value: formData.get("steam_profile_link") || "N/A", inline: true },
+                    { name: "Steam Profile Name", value: formData.get("steam_profile_name") || "N/A", inline: true },
+                    { name: "Steam Hex ID", value: formData.get("steam_hex") || "N/A", inline: true },
+                    { name: "Social Media Link", value: formData.get("social_link") || "N/A", inline: true },
+                    { name: "Facebook Name", value: formData.get("facebook_name") || "N/A", inline: true },
+                    { name: "Discord Username", value: formData.get("discord_username") || "N/A", inline: true },
+                    { name: "Discord ID", value: formData.get("discord_id") || "N/A", inline: true },
+                    { name: "Roleplay Explanation", value: formData.get("roleplay_explain") || "N/A", inline: false },
+                    { name: "New Life Rules Explanation", value: formData.get("newlife_explain") || "N/A", inline: false },
+                    { name: "Previous RP Experience", value: formData.get("previous_rp") || "N/A", inline: true },
+                    { name: "Read Region City Rulebook?", value: formData.get("read_rules") || "N/A", inline: true },
+                    { name: "Agree to Follow Server Rules?", value: formData.get("agree_rules") || "N/A", inline: true },
+                ],
+                footer: { text: "Legion RP | Whitelist Form" },
+                timestamp: new Date().toISOString()
+            }]
+        };
+
+        // Send to Discord
+        fetch('https://discord.com/api/webhooks/1417093386481176666/lxZMHt46nWDfgmBuRr4mmj2RKNwFvq6_zJ9IZXnv_sG9GVMNJiBeudjUovBQuO8mSfEy', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(message)
+        })
+        .then(res => {
+            if (res.ok) {
+                successMsg.style.display = 'block';
+                form.reset();
+                successMsg.scrollIntoView({ behavior: 'smooth' });
+            } else { throw new Error("Webhook failed"); }
+        })
+        .catch(err => {
+            console.error("Webhook Error:", err);
+            errorMsg.style.display = 'block';
+            errorMsg.scrollIntoView({ behavior: 'smooth' });
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit Application';
+        });
+    });
+});
+
+
+
+</script>
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+
+</body>
+</html>
