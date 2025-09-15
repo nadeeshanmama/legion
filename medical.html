@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Whitelist Application - Legion Rp</title>
+    <title>Medical Application -  Legion Rp</title>
     <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" >
-    <meta content="Legion Rp" name="description" >
-    <meta content="Legion Rp Sri Lanka" name="keywords" >
+    <meta content="Thanamalvila RolePlay" name="description" >
+    <meta content="Thanamalvila RolePlay Sri Lanka" name="keywords" >
     <meta content="BenX Development" name="author" >
     <!-- CSS Files
     ================================================== -->
@@ -41,10 +41,10 @@
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
-            border-left: 4px solid #f07320;
+            border-left: 4px solid #A020F0;
         }
         .form-section h4 {
-            color: #f08420;
+            color: #A020F0;
             margin-bottom: 15px;
         }
         .character-info {
@@ -83,7 +83,7 @@
                                 <div class="de-flex-col">
                                     <!-- logo begin -->
                                     <div id="logo">
-                                        <a href="./index.html">
+                                        <a href='/'>
                                             <img class="logo-main" src="images/logo.png" alt="" >
                                             <img class="logo-mobile" src="images/logo.png" alt="" >
                                         </a>
@@ -93,19 +93,18 @@
                             </div>
                             <div class="de-flex-col header-col-mid">
                                 <ul id="mainmenu">
-                              <li><a class="menu-item" href="./index.html">Home</a></li>
+                                   <li><a class="menu-item" href="./index.html">Home</a></li>
                                     <li><a class="menu-item" href="./ServerRules.html">Server Rules</a></li>
-                                   <li><a class="menu-item" href="./police.html">Pd Application</a></li>
+<li><a class="menu-item" href="./police.html">Pd Application</a></li>
 <li><a class="menu-item" href="./medical.html">Md Application</a></li>
+                                   
                                     <li><a class="menu-item" href="./ourteam.html">OurTeam</a></li>
                                     <li><a class="menu-item" href="./WhitelistApplicationEnglish.html">Whitelist Application</a>
-                                        </ul>
-                                    </li>
                                 </ul>
                             </div>
                             <div class="de-flex-col">
                                 <div class="menu_side_area">
-                                    <a href="" class="btn-line">Discord</a>
+                                    <a href="https://discord.gg/3865CZqaVf" class="btn-line">Discord</a>
                                     <span id="menu-btn"></span>
                                 </div>
                             </div>
@@ -126,102 +125,132 @@
                             <p class="lead">
                                 All Fields Marked With <span style="color: #ff3333;">*</span> Are Required.
                             </p>
-<form id="whitelist_form" method="post">
+<form id="medical_form" class="position-relative z1000">
+    <!-- Character Information -->
     <div class="form-section">
-        <h4>Personal Information</h4>
+        <h4>Character Information</h4>
+
         <div class="field-set">
-            <span class="d-label required-field">Email</span>
-            <input type="email" name="email" class="form-control" required>
+            <span class="d-label required-field">Character Full Name</span>
+            <input type="text" name="char_full_name" class="form-control" placeholder="Ex: Kamal Perera" required>
         </div>
+
         <div class="field-set">
-            <span class="d-label required-field">Full Name (Real)</span>
-            <input type="text" name="full_name" class="form-control" required>
+            <span class="d-label required-field">Character Age</span>
+            <input type="number" name="char_age" class="form-control" placeholder="Ex: 24" min="16" max="99" required>
         </div>
+    </div>
+
+    <!-- Discord & Steam -->
+    <div class="form-section">
+        <h4>Account Information</h4>
+
         <div class="field-set">
-            <span class="d-label required-field">Date of Birth</span>
-            <input type="date" name="dob" class="form-control" required>
+            <span class="d-label required-field">Discord Member ID</span>
+            <input type="text" name="discord_id" class="form-control" placeholder="Copy from !user command in server" required>
         </div>
-        <div class="field-set">
-            <span class="d-label">Country and Time Zone</span>
-            <input type="text" name="country_timezone" class="form-control">
-        </div>
+
         <div class="field-set">
             <span class="d-label required-field">Steam Profile Link</span>
-            <input type="url" name="steam_profile_link" class="form-control" required>
+            <input type="text" name="steam_link" class="form-control" placeholder="Ex: https://steamcommunity.com/profiles/765611992060592090/" required>
         </div>
+
         <div class="field-set">
-            <span class="d-label required-field">Steam Profile Name</span>
-            <input type="text" name="steam_profile_name" class="form-control" required>
+            <span class="d-label required-field">Steam Hex ID</span>
+            <input type="text" name="steam_hex" class="form-control" placeholder="Ex: 110000139a79ac8" required>
         </div>
+
         <div class="field-set">
-            <span class="d-label">Steam Hex ID</span>
-            <input type="text" name="steam_hex" class="form-control">
+            <span class="d-label required-field">Email</span>
+            <input type="email" name="email" class="form-control" placeholder="Your Email Address" required>
         </div>
+    </div>
+
+    <!-- Employment History -->
+    <div class="form-section">
+        <h4>Employment History</h4>
         <div class="field-set">
-            <span class="d-label required-field">Any Social Media Link</span>
-            <input type="url" name="social_link" class="form-control" required>
+            <span class="d-label required-field">Have you ever been employed somewhere before? If so, state the employment history. (Position, Service Period, etc.)</span>
+            <textarea name="employment_history" class="form-control" rows="3" placeholder="Ex: Doctor | 3 Months" required></textarea>
         </div>
+    </div>
+
+    <!-- Preferred Division -->
+    <div class="form-section">
+        <h4>Preferred Division</h4>
         <div class="field-set">
-            <span class="d-label">Facebook Name</span>
-            <input type="text" name="facebook_name" class="form-control">
-        </div>
-        <div class="field-set">
-            <span class="d-label required-field">Discord Username</span>
-            <input type="text" name="discord_username" class="form-control" required>
-        </div>
-        <div class="field-set">
-            <span class="d-label required-field">Discord ID</span>
-            <input type="text" name="discord_id" class="form-control" required>
-        </div>
-        <div class="field-set">
-            <span class="d-label">Explain Roleplay in your own words</span>
-            <textarea name="roleplay_explain" class="form-control" rows="3"></textarea>
-        </div>
-        <div class="field-set">
-            <span class="d-label">New Life Rules Explanation</span>
-            <textarea name="newlife_explain" class="form-control" rows="3"></textarea>
-        </div>
-        <div class="field-set">
-            <span class="d-label required-field">Previous Roleplay Experience</span>
-            <select name="previous_rp" class="form-control" required>
-                <option value="">--Select--</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-        </div>
-        <div class="field-set">
-            <span class="d-label required-field">Read Region City Rulebook?</span>
-            <select name="read_rules" class="form-control" required>
-                <option value="">--Select--</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-        </div>
-        <div class="field-set">
-            <span class="d-label required-field">Agree to Follow Server Rules?</span>
-            <select name="agree_rules" class="form-control" required>
-                <option value="">--Select--</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
+            <span class="d-label required-field">Preferred Division</span>
+            <select name="preferred_division" class="form-control" required>
+                <option value="">Select Division</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Paramedic">Paramedic</option>
             </select>
         </div>
     </div>
 
+    <div id='submit' class="mt20">
+        <button type="submit" id='send_application' class="btn-main">Submit Application</button>
+    </div>
+
+    <div id="success_message" class='success'>Your Medical/Paramedic Application Has Been Submitted Successfully!</div>
+    <div id="error_message" class='error'>Error submitting the application. Please try again.</div>
+</form>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('medical_form');
+    const submitBtn = document.getElementById('send_application');
+    const successMsg = document.getElementById('success_message');
+    const errorMsg = document.getElementById('error_message');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        const data = {};
+        new FormData(form).forEach((value, key) => data[key] = value);
+
+        const webhookURL = 'https://discord.com/api/webhooks/1417094624438259742/HfQ95oL10oQs_CcVIeRgzuxL2D404NorqI8moX-ZYs2_k0FOcSVYQp7J89OwopzP0XK4';
+
+        const message = {
+            content: `**New Medical/Paramedic Application**\n` +
+                     `**Character Full Name:** ${data.char_full_name}\n` +
+                     `**Age:** ${data.char_age}\n` +
+                     `**Discord ID:** ${data.discord_id}\n` +
+                     `**Steam Profile:** ${data.steam_link}\n` +
+                     `**Steam Hex:** ${data.steam_hex}\n` +
+                     `**Email:** ${data.email}\n` +
+                     `**Employment History:** ${data.employment_history}\n` +
+                     `**Preferred Division:** ${data.preferred_division}`
+        };
+
+        fetch(webhookURL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(message)
+        })
+        .then(res => {
+            if(res.ok){
+                successMsg.style.display = 'block';
+                form.reset();
+            } else throw new Error('Webhook failed');
+        })
+        .catch(err => {
+            console.error(err);
+            errorMsg.style.display = 'block';
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit Application';
+        });
+    });
+});
+</script>
 
 
-                                </div>
-                                    
-                                <div id='submit' class="mt20">
-                                    <button type="submit" id='send_application' class="btn-main">Submit Application</button>
-                                </div>
-
-                                <div id="success_message" class='success'>
-                                    Your Whitelist Application Has Been Submitted Successfully! Our Staff Team Will Review It Shortly. Please Join Our Discord Server For Updates.
-                                </div>
-                                <div id="error_message" class='error'>
-                                    There Was An Error Submitting Your Application. Please Try Again Or Contact Us On Discord.
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -237,15 +266,15 @@
                             <div class="de-flex">
                                 <div class="de-flex-col">
                                     <a href="">
-                                        Legion Rp © 2025
+                                        Legion RolePlay © 2025
                                     </a>
                                 </div>
                                 <div class="social-icons">
                                     <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                                     <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                    <a href=""><i class="fa-brands fa-discord"></i></a>
-                                    <a href="https://www.tiktok.com/@Legion_rp"><i class="fa-brands fa-tiktok"></i></a>
-                                    <a href="https://www.youtube.com/@LegionRoleplay"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://discord.gg/"><i class="fa-brands fa-discord"></i></a>
+                                    <a href="https://www.tiktok.com/@"><i class="fa-brands fa-tiktok"></i></a>
+                                    <a href="https://www.youtube.com/@"><i class="fa-brands fa-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -255,88 +284,63 @@
         </footer>
         <!-- footer close -->
     </div>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('whitelist_form');
-    const successMsg = document.getElementById('success_message');
-    const errorMsg = document.getElementById('error_message');
-    const submitBtn = document.getElementById('send_application');
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        successMsg.style.display = 'none';
-        errorMsg.style.display = 'none';
-
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Submitting...';
-
-        const formData = new FormData(form);
-
-        // Discord webhook message
-        const message = {
-            content: "**New Md Application Submitted** ✅",
-            embeds: [{
-                title: "Whitelist Application",
-                color: 5814783, // Orange-ish
-                fields: [
-                    { name: "📧 Email", value: formData.get("email") || "N/A", inline: true },
-                    { name: "👤 Full Name", value: formData.get("full_name") || "N/A", inline: true },
-                    { name: "🎂 Date of Birth", value: formData.get("dob") || "N/A", inline: true },
-                    { name: "🌎 Country & Timezone", value: formData.get("country_timezone") || "N/A", inline: true },
-                    { name: "🔗 Steam Profile Link", value: formData.get("steam_profile_link") || "N/A", inline: true },
-                    { name: "Steam Profile Name", value: formData.get("steam_profile_name") || "N/A", inline: true },
-                    { name: "Steam Hex ID", value: formData.get("steam_hex") || "N/A", inline: true },
-                    { name: "Social Media Link", value: formData.get("social_link") || "N/A", inline: true },
-                    { name: "Facebook Name", value: formData.get("facebook_name") || "N/A", inline: true },
-                    { name: "Discord Username", value: formData.get("discord_username") || "N/A", inline: true },
-                    { name: "Discord ID", value: formData.get("discord_id") || "N/A", inline: true },
-                    { name: "Roleplay Explanation", value: formData.get("roleplay_explain") || "N/A", inline: false },
-                    { name: "New Life Rules Explanation", value: formData.get("newlife_explain") || "N/A", inline: false },
-                    { name: "Previous RP Experience", value: formData.get("previous_rp") || "N/A", inline: true },
-                    { name: "Read Region City Rulebook?", value: formData.get("read_rules") || "N/A", inline: true },
-                    { name: "Agree to Follow Server Rules?", value: formData.get("agree_rules") || "N/A", inline: true },
-                ],
-                footer: { text: "Legion RP | Whitelist Form" },
-                timestamp: new Date().toISOString()
-            }]
-        };
-
-        // Send to Discord
-        fetch('https://discord.com/api/webhooks/1417094643929321592/zKuJ_cUe5KMZBzllCnHvxELfexwpWU-oamL6uUwp470LOqLHxGNoVs8huHmNvaM14rWH', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(message)
-        })
-        .then(res => {
-            if (res.ok) {
-                successMsg.style.display = 'block';
-                form.reset();
-                successMsg.scrollIntoView({ behavior: 'smooth' });
-            } else { throw new Error("Webhook failed"); }
-        })
-        .catch(err => {
-            console.error("Webhook Error:", err);
-            errorMsg.style.display = 'block';
-            errorMsg.scrollIntoView({ behavior: 'smooth' });
-        })
-        .finally(() => {
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Submit Application';
-        });
-    });
-});
-
-
-
-</script>
-
-
-
+    
     <!-- Javascript Files
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
-
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('whitelist_form');
+            const submitBtn = document.getElementById('send_application');
+            const successMsg = document.getElementById('success_message');
+            const errorMsg = document.getElementById('error_message');
+            
+            // Initially hide messages
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Hide messages
+                successMsg.style.display = 'none';
+                errorMsg.style.display = 'none';
+                
+                // Disable submit button to prevent multiple submissions
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Submitting...';
+                
+                // Get all form data
+                const formData = new FormData(form);
+                
+                // Send to PHP backend
+                fetch('WhitelistApplication.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        successMsg.style.display = 'block';
+                        form.reset();
+                        successMsg.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        throw new Error(data.message || 'Failed to submit application');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    errorMsg.style.display = 'block';
+                    errorMsg.scrollIntoView({ behavior: 'smooth' });
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Submit Application';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
