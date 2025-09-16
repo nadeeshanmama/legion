@@ -60,6 +60,22 @@
             content: " *";
             color: #ff3333;
         }
+.form-title-with-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* text left, logo right */
+    margin-bottom: 20px;
+}
+
+.form-title-with-logo h2 {
+    margin: 0;
+    color: #A020F0; /* matching purple theme */
+}
+
+.medical-logo {
+    height: 50px;   /* oyāta set karanna puluwan */
+    width: auto;
+}
     </style>
 </head>
 
@@ -122,6 +138,7 @@
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1">
                             <h2>Medical Application</h2>
+                            <center><img src="images/lgmd.png" alt="Medical Logo" class="medical-logo"><center>
                             <p class="lead">
                                 All Fields Marked With <span style="color: #ff3333;">*</span> Are Required.
                             </p>
@@ -344,3 +361,4 @@ document.addEventListener('DOMContentLoaded', function() {
     </script>
 </body>
 </html>
+
