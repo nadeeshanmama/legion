@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitelist Application - Legion Suiper Roleplay</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Legion Suiper Logo">
+                    <span>Legion Roleplay</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="whitelist-application.html">Whitelist</a></li>
+                    <li><a href="applications.html">Applications</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button">
+                <a href="join.html" class="btn-primary">Join Now</a>
+            </div>
+        </div>
+    </header>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="hero-content">
+
+            <h1>WHITELIST LEGION ROLEPLAY</h1>
+            <p>Experience the ultimate GTA V roleplay server with immersive stories, content, and realistic gameplay</p>
+            <div class="hero-buttons">
+                <a href="join.html" class="btn-primary">How To Join</a>
+                <a href="https://discord.gg/DugPSevG5U" class="btn-secondary">Join Discord</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Whitelist Application Form -->
+    <section class="application-form-section dark-theme">
+        <div class="container">
+            <div class="department-logo">
+                <img src="images/logo.svg" alt="Legion Suiper Logo">
+            </div>
+            
+            <div class="application-intro">
+                <h2>Whitelist Application</h2>
+                <p>Complete this form to apply for whitelist access to our roleplay server. Please provide accurate information to help us process your application quickly.</p>
+            </div>
+            
+            <form id="whitelist-application-form" class="application-form specialized-form">
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="full-name">1.1 Full Name (Real)*</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dob">1.2 Date of Birth* (Month, day, year)</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="timezone">1.3 Country and Time Zone</label>
+                    <input type="text" id="timezone" name="timezone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="steam-profile">1.4 Your Steam profile link*</label>
+                    <input type="url" id="steam-profile" name="steam-profile" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="steam-name">1.5 Your Steam profile name*</label>
+                    <input type="text" id="steam-name" name="steam-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="steam-hex">1.6 Steam Hex ID</label>
+                    <input type="text" id="steam-hex" name="steam-hex" placeholder="Find your Steam Hex ID at steamid.pro">
+                </div>
+                
+                <div class="form-group">
+                    <label for="social-media">1.7 Your any social media platform link*</label>
+                    <input type="url" id="social-media" name="social-media" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="facebook-name">1.8 What is your Facebook name</label>
+                    <input type="text" id="facebook-name" name="facebook-name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="discord-username">1.9 Discord Username (e.g., User#1234)*</label>
+                    <input type="text" id="discord-username" name="discord-username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="discord-id">1.10 Discord ID*</label>
+                    <input type="text" id="discord-id" name="discord-id" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="roleplay-explanation">1.11 Explain what is Roleplay in your own words.</label>
+                    <textarea id="roleplay-explanation" name="roleplay-explanation" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="new-life-rules">1.12 What are New life rules? explain in your own words? (Please explain one situation)</label>
+                    <textarea id="new-life-rules" name="new-life-rules" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>1.13 Do you have any previous role-play experience?*</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="rp-experience" value="Yes" required> Yes
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="rp-experience" value="No"> No
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>1.14 Have you read the Region City rule book?*</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="read-rules" value="Yes" required> Yes
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="read-rules" value="No"> No
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>1.15 Do you understand and agree to follow the server rules and guidelines?*</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="agree-rules" value="Yes" required> Yes
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="agree-rules" value="No"> No
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn-primary">SUBMIT APPLICATION</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="Legion Suiper Logo">
+                    <span>Legion Roleplay</span>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="rules.html">Server Rules</a></li>
+                        <li><a href="join.html">How to Join</a></li>
+                        <li><a href="staff.html">Our Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Legion Roleplay. All Rights Reserved | Designed by POPA</p>
+                <div class="social-links">
+                    <a href="https://discord.gg/DugPSevG5U"><i class="fab fa-discord"></i></a>
+                    <a href="https://twitter.com/Legion Roleplay"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/Legion Roleplay"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/Legion Roleplay"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/discord-webhook.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

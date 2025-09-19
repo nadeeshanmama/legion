@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Application - Legion Suiper Roleplay</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Legion Suiper Logo">
+                    <span>Legion Roleplay</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="whitelist-application.html">Whitelist</a></li>
+                    <li><a href="applications.html">Applications</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button">
+                <a href="join.html" class="btn-primary">Join Now</a>
+            </div>
+        </div>
+    </header>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="hero-content">
+
+            <h1>MEDICAL APPLICATION LEGION ROLEPLAY</h1>
+            <p>Experience the ultimate GTA V roleplay server with immersive stories, content, and realistic gameplay</p>
+            <div class="hero-buttons">
+                <a href="join.html" class="btn-primary">How To Join</a>
+                <a href="https://discord.gg/DugPSevG5U" class="btn-secondary">Join Discord</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Medical Application Form -->
+    <section class="application-form-section dark-theme">
+        <div class="container">
+            <div class="department-logo">
+               <center> <img src="images/lgmd.png" alt="Medical Department Badge"> <center>
+            </div>
+            
+            <form id="medical-application-form" class="application-form specialized-form">
+                <div class="form-group">
+                    <label for="character-full-name">Character Full Name*</label>
+                    <input type="text" id="character-full-name" name="character-full-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="discord-name">Discord Name*</label>
+                    <input type="text" id="discord-name" name="discord-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="character-age">Character Age*</label>
+                    <input type="number" id="character-age" name="character-age" required min="18" max="65">
+                </div>
+                
+                <div class="form-group">
+                    <label for="discord-id">What is your Discord ID/Username? (e.g. YourName#1234 or @YourName)*</label>
+                    <input type="text" id="discord-id" name="discord-id" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hours-played">Total Server Playtime Hours? (Use /stats in-game to check)*</label>
+                    <input type="number" id="hours-played" name="hours-played" required min="0">
+                </div>
+                
+                <div class="form-group">
+                    <label for="medical-experience">Have you had previous medical experience in other servers? If yes, please describe.*</label>
+                    <textarea id="medical-experience" name="medical-experience" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="scenario">Describe a scenario where you had to provide emergency medical care. How did you handle the situation and what was the outcome?*</label>
+                    <textarea id="scenario" name="scenario" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn-primary">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="Legion Suiper Logo">
+                    <span>Legion Roleplay</span>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="rules.html">Server Rules</a></li>
+                        <li><a href="join.html">How to Join</a></li>
+                        <li><a href="whitelist-application.html">Whitelist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Legion Roleplay. All Rights Reserved | Designed by POPA</p>
+                <div class="social-links">
+                    <a href="https://discord.gg/DugPSevG5U"><i class="fab fa-discord"></i></a>
+                    <a href="https://twitter.com/Legion Roleplay"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/Legion Roleplay"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/Legion Roleplay"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/discord-webhook.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

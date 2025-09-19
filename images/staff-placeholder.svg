@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a3a" />
+      <stop offset="100%" stop-color="#1a1a25" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b00" />
+      <stop offset="100%" stop-color="#9900ff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#avatarGradient)" stroke="url(#accentGradient)" stroke-width="3" />
+  
+  <!-- Person silhouette -->
+  <g fill="#ffffff" opacity="0.8">
+    <!-- Head -->
+    <circle cx="100" cy="75" r="30" />
+    
+    <!-- Body -->
+    <path d="M100,110 C130,110 150,130 160,170 L40,170 C50,130 70,110 100,110 Z" />
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="160" cy="40" r="8" fill="url(#accentGradient)" opacity="0.7" />
+  <circle cx="40" cy="160" r="12" fill="url(#accentGradient)" opacity="0.5" />
+  <circle cx="30" cy="60" r="5" fill="url(#accentGradient)" opacity="0.6" />
+  <circle cx="170" cy="140" r="7" fill="url(#accentGradient)" opacity="0.8" />
+</svg>

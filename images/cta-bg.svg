@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="600" viewBox="0 0 1920 600">
+  <defs>
+    <linearGradient id="cta-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f13" />
+      <stop offset="100%" stop-color="#1a1a24" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="600" fill="url(#cta-gradient)" />
+  
+  <!-- Abstract shapes -->
+  <circle cx="200" cy="300" r="100" fill="#ff6b00" opacity="0.1" />
+  <circle cx="1700" cy="200" r="150" fill="#9c27b0" opacity="0.1" />
+  <circle cx="1000" cy="400" r="200" fill="#ff6b00" opacity="0.05" />
+  
+  <!-- Grid lines -->
+  <line x1="0" y1="100" x2="1920" y2="100" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  <line x1="0" y1="200" x2="1920" y2="200" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  <line x1="0" y1="300" x2="1920" y2="300" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  <line x1="0" y1="400" x2="1920" y2="400" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  <line x1="0" y1="500" x2="1920" y2="500" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  
+  <line x1="300" y1="0" x2="300" y2="600" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  <line x1="600" y1="0" x2="600" y2="600" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  <line x1="900" y1="0" x2="900" y2="600" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  <line x1="1200" y1="0" x2="1200" y2="600" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  <line x1="1500" y1="0" x2="1500" y2="600" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+  <line x1="1800" y1="0" x2="1800" y2="600" stroke="#ffffff" stroke-width="0.5" opacity="0.05" />
+</svg>

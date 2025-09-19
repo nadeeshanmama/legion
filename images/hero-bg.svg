@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f13" />
+      <stop offset="100%" stop-color="#1a1a24" />
+    </linearGradient>
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.05 0" />
+      <feBlend mode="overlay" in2="SourceGraphic" result="blend" />
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg-gradient)" />
+  <rect width="1920" height="1080" filter="url(#noise)" opacity="0.3" />
+  
+  <!-- City Skyline Silhouette -->
+  <path d="M0,800 L100,810 L200,790 L300,800 L400,780 L500,790 L600,770 L700,780 L800,760 L900,780 L1000,750 L1100,770 L1200,740 L1300,760 L1400,730 L1500,750 L1600,720 L1700,740 L1800,710 L1920,730 L1920,1080 L0,1080 Z" fill="#080810" opacity="0.8" />
+  
+  <!-- Abstract Road -->
+  <path d="M0,900 C300,880 600,920 900,880 C1200,840 1500,900 1920,860 L1920,1080 L0,1080 Z" fill="#0a0a14" opacity="0.7" />
+  
+  <!-- Light Streaks -->
+  <line x1="200" y1="850" x2="400" y2="850" stroke="#ff6b00" stroke-width="1" opacity="0.3" />
+  <line x1="600" y1="870" x2="900" y2="870" stroke="#ff6b00" stroke-width="1" opacity="0.3" />
+  <line x1="1200" y1="860" x2="1500" y2="860" stroke="#ff6b00" stroke-width="1" opacity="0.3" />
+  <line x1="300" y1="890" x2="700" y2="890" stroke="#9c27b0" stroke-width="1" opacity="0.2" />
+  <line x1="1000" y1="880" x2="1400" y2="880" stroke="#9c27b0" stroke-width="1" opacity="0.2" />
+  <line x1="1600" y1="875" x2="1900" y2="875" stroke="#9c27b0" stroke-width="1" opacity="0.2" />
+</svg>
